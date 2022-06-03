@@ -18,7 +18,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { PopulargamesComponent } from './components/homepage/populargames/populargames.component';
 import { PopulartournamentComponent } from './components/homepage/populartournament/populartournament.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { GamesComponent } from './components/homepage/games/games.component'
+import { GamesComponent } from './components/homepage/games/games.component';
+import { MatchesComponent } from './components/matches/matches.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +35,8 @@ import { GamesComponent } from './components/homepage/games/games.component'
     PopulargamesComponent,
     PopulartournamentComponent,
     FooterComponent,
-    GamesComponent
+    GamesComponent,
+    MatchesComponent
   ],
   imports: [
     BrowserModule,
