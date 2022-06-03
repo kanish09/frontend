@@ -1,17 +1,17 @@
 #container{
 	box-shadow: 0 15px 30px 1px grey;
-	background: rgba(255, 255, 255, 0.90);
 	text-align: center;
 	border-radius: 5px;
 	height: 250px;
- 	margin: 1%;
+ 	margin: 1% 1%;
     padding: 1%;
 }
 h2{
-	text-decoration: underline;
+	color: antiquewhite;
 }
 h5{
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: antiquewhite;
 }
 .product-details {
 	position: relative;
@@ -51,3 +51,27 @@ h5{
 .info ul li{transition: 0.3s ease;}
 .product-image:hover img {transition: all 0.3s ease-out;}
 .product-image:hover img {transform: scale(1.2, 1.2);}
+button{
+	margin: 3% 1%;
+	height: 50px;
+}
+button i{
+	height: 30px;
+	background-color: slateblue;
+	color: antiquewhite;
+	padding: 7px;
+}
+@media (max-width:640px ) {
+	.product-image{
+		width: 0%;
+	}
+	#container {
+		width: 350px;
+		margin: 3%;
+	}
+}
+@media (min-width:765px) and (max-width:1470px){
+	.product-image{
+		width: 0%;
+	}
+}

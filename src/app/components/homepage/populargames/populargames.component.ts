@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./populargames.component.css']
 })
 export class PopulargamesComponent implements OnInit {
-
+  images = 'assets/images/bgmi/bgmi.png'
   constructor() { }
 
   ngOnInit(): void {

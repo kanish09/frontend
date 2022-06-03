@@ -1,48 +1,56 @@
-.carousel {
-    margin: 2% 1% 3% 1%;
+h1 {
+  text-align: center;
 }
 
-.card {
-  transition: 0.5s;
+.container {
+  width: 800px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  padding: 2% 1%;
+  /*  box-shadow is from materialize css's website */
+  box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14),
+      0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
+}
+
+.container img {
+  width: 100%;
+  z-index: -2;
+}
+
+button {
+  height: 10%;
+  border: none;
+  outline: none;
+  background: rgba(0, 0, 0, 0.5);
   cursor: pointer;
-  width: 250px;
+  padding: 1em;
+  display: flex;
 }
 
-.card:hover {
-  transform: scale(1.05);
-  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+button .arrow {
+  border: solid #fff;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 10px;
+  transition: transform 0.3s ease-out;
+  outline: none;
 }
 
-.card::before,
-.card::after {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  transform: scale3d(0, 0, 1);
-  transition: transform 0.3s ease-out 0s;
-  background: rgba(255, 255, 255, 0.1);
-  content: "";
-  pointer-events: none;
+#right-btn {
+  margin: auto 0 auto -2em;
 }
 
-.card::before {
-  transform-origin: left top;
+#right-btn .arrow {
+  transform: rotate(-45deg);
 }
 
-.card::after {
-  transform-origin: right bottom;
+#left-btn {
+  z-index: 0;
+  margin: auto -2em auto 0;
 }
 
-.card:hover::before,
-.card:hover::after,
-.card:focus::before,
-.card:focus::after {
-  transform: scale3d(1, 1, 1);
+#left-btn .arrow {
+  transform: rotate(135deg);
 }
-@media (max-width: 576px){
-  .col-sm-6{
- width: 150px;
-  }
-}
+

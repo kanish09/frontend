@@ -1,97 +1,72 @@
-<!-- <div class="container row">
-  <div class="card col-xl-12">
-    <div class="face face1">
-      <div class="content">
-        <img
-          src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/design_128.png?raw=true"
-        />
-        <h3>Design</h3>
-      </div>
-    </div>
-    <div class="face face2">
-      <div class="content">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-          cum cumque minus iste veritatis provident at.
-        </p>
-        <a href="#">Read More</a>
-      </div>
-    </div>
-  </div>
-  <div class="card col">
-    <div class="face face1">
-      <div class="content">
-        <img
-          src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true"
-        />
-        <h3>Code</h3>
-      </div>
-    </div>
-    <div class="face face2">
-      <div class="content">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-          cum cumque minus iste veritatis provident at.
-        </p>
-        <a href="#">Read More</a>
-      </div>
-    </div>
-  </div>
-  <div class="card col">
-    <div class="face face1">
-      <div class="content">
-        <img
-          src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/launch_128.png?raw=true"
-        />
-        <h3>Launch</h3>
-      </div>
-    </div>
-    <div class="face face2">
-      <div class="content">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-          cum cumque minus iste veritatis provident at.
-        </p>
-        <a href="#">Read More</a>
-      </div>
-    </div>
-  </div>
-  <div class="card col">
-    <div class="face face1">
-      <div class="content">
-        <img
-          src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/launch_128.png?raw=true"
-        />
-        <h3>Launch</h3>
-      </div>
-    </div>
-    <div class="face face2">
-      <div class="content">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-          cum cumque minus iste veritatis provident at.
-        </p>
-        <a href="#">Read More</a>
-      </div>
-    </div>
-  </div>
-  <div class="card col">
-    <div class="face face1">
-      <div class="content">
-        <img
-          src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/launch_128.png?raw=true"
-        />
-        <h3>Launch</h3>
-      </div>
-    </div>
-    <div class="face face2">
-      <div class="content">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-          cum cumque minus iste veritatis provident at.
-        </p>
-        <a href="#">Read More</a>
-      </div>
-    </div>
-  </div>
-</div> -->
+<div class="container-xl">
+	<div class="row">
+		<div class="col-md-10 mx-auto">
+			<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+			<!-- Carousel indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>   
+			<!-- Wrapper for carousel items -->
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="row">
+						<div class="col-sm-4" *ngFor="let item of images">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img [src]="item" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Tournament Name</h4>
+									<p>Category</p>
+									<a href="#" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
+								</div>						
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="row">
+						<div class="col-sm-4" *ngFor="let item of images">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img [src]="item" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>London</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam.</p>
+									<a href="#" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
+								</div>						
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+          <div class="row">
+						<div class="col-sm-4" *ngFor="let item of images">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img [src]="item" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Tournament Name</h4>
+									<p>Category</p>
+									<a href="#" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
+								</div>						
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Carousel controls -->
+			<a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+				<i class="fa fa-angle-left"></i>
+			</a>
+			<a class="carousel-control-next" href="#myCarousel" data-slide="next">
+				<i class="fa fa-angle-right"></i>
+			</a>
+		</div>
+		</div>
+	</div>
+</div>

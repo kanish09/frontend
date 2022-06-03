@@ -1,36 +1,11 @@
-<div class="d-flex justify-content-center" style="background-color: #212529">
-  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="1000000">
-        <img src="assets/images/carousel_image.jpg" class="d-block w-100" alt="...">
-      </div>
-      <!-- <div class="carousel-item" data-bs-interval="2000">
-        <img [src]="images[2]" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img [src]="images[2]" class="d-block w-100" alt="...">
-      </div> -->
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+<main>
+  <h1>Basic Vanilla JS Carousel</h1>
+  <div class="container h">
+      <button id="left-btn"><i class="arrow"></i></button>
+      <img id="carousel" src="" alt="">
+      <button id="right-btn"><i class="arrow"></i></button>
   </div>
-</div>
-<div style="background-color: #333;">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div *ngFor="let item of images" class="col-xl-3 col-lg-4 col-md-4 col-sm-6 d-flex justify-content-center">
-        <div class="card mb-3">
-          <img [src]="item" height="270px" class="card-img-top mt-1" alt="..." />
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+</main>
+<app-games></app-games>
 <app-populartournament></app-populartournament>
 <app-populargames></app-populargames>
